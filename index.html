@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page loader</title>
+
+    <link rel="stylesheet" href="pageload_static/pageload.css">
+</head>
+<body>
+    <div id="pageload">
+        <div class="pageload">
+            <div class="pageload_inner">
+            </div>
+            <span class="loading">loading...</span>
+        </div>
+        <script>
+            var pageload = document.getElementById('pageload')
+            window.addEventListener("load", () => {
+                pageload.style.display = "none"
+            })
+        </script>
+    </div>
+    
+    
+
+    <script src="pageload_static/app.js"></script>
+</body>
+</html>
